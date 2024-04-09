@@ -117,4 +117,9 @@ button{
     .bookmarks{
         width: 90%;
     }
+
+    button{
+        width: 90%;
+        margin: 5px;
+    }
 }
