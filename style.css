@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background: hsla(191, 75%, 60%, 1);
+    background: linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4DC9E6", endColorstr="#210CAE", GradientType=1 ); 
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container{
+    width: 560px;
+    background: linear-gradient(to left,  hsla(248, 87%, 36%, 1),   hsla(191, 75%, 60%, 1) ) ;    
+    padding: 10px 20px;
+    margin: 0 auto;
+    position: relative;
+    background: linear-gradient(to top left, #ffffffff, #ffffff33);
+    backdrop-filter: blur(8px);
+    box-shadow: 2px 2px 5px #2b6a94;
+    z-index: 2;
+}
+
+h1{
+    padding: 10px 0;
+    color: black;
+}
+
+input{
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgba(68, 66, 66, 0.6);
+}
+
+button{
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background:  blue;
+    color: white;
+    border: none;
+    font-weight: 700;
+}
+
+.bookmarks{
+    padding: 20px 10px;
+    overflow-y: scroll;
+}
+
+.bookmark-card{
+    font-size: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bookmark-card a{
+    color: #333;
+    padding: 5px;
+    margin-left: 30px;
+}
+
+.bookmark-card a:hover{
+   color: blue;
+}
+
+.bookmark-card span{
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    margin-right: 40px;
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: linear-gradient(to top right, #ffffff33, #ffffff);
+    position: absolute;
+}
+
+.c1{
+    top: 100px;
+    left: 40px;
+}
+
+.c2{
+    bottom: 200px;
+    right: 50px;
+}
+
+@media screen and (max-width: 500px){
+    .container{
+        width:  90%;
+        position: relative;
+    }
+
+    input{
+        width: 90%;
+        margin: 5px;
+    }
+
+    .bookmarks{
+        width: 90%;
+    }
+}
